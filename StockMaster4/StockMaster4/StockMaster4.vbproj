@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C61325C3-46E3-48CC-AA96-C73155C81A75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>StockMaster4.My.MyApplication</StartupObject>
+    <RootNamespace>StockMaster4</RootNamespace>
+    <AssemblyName>StockMaster4</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StockMaster4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StockMaster4.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDelete.vb" />
+    <Compile Include="CLoad.vb" />
+    <Compile Include="CReports.vb" />
+    <Compile Include="CSave.vb" />
+    <Compile Include="CStockMovements.vb" />
+    <Compile Include="CSystemLog.vb" />
+    <Compile Include="CUpdate.vb" />
+    <Compile Include="CUtilities.vb" />
+    <Compile Include="FGridAllStockForm.Designer.vb">
+      <DependentUpon>FGridAllStockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridAllStockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridCurrentStockForm.Designer.vb">
+      <DependentUpon>FGridCurrentStockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridCurrentStockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridMoveTypesForm.Designer.vb">
+      <DependentUpon>FGridMoveTypesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridMoveTypesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridPurchaseOrdersForm.Designer.vb">
+      <DependentUpon>FGridPurchaseOrdersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridPurchaseOrdersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridSeasonsForm.Designer.vb">
+      <DependentUpon>FGridSeasonsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridSeasonsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopAdjustmentForm.Designer.vb">
+      <DependentUpon>FGridShopAdjustmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopAdjustmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopDeliveriesForm.Designer.vb">
+      <DependentUpon>FGridShopDeliveriesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopDeliveriesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopReturnsForm.Designer.vb">
+      <DependentUpon>FGridShopReturnsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopReturnsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopSalesForm.Designer.vb">
+      <DependentUpon>FGridShopSalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopSalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopsForm.Designer.vb">
+      <DependentUpon>FGridShopsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopTransfersForm.Designer.vb">
+      <DependentUpon>FGridShopTransfersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopTransfersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridSuppliersForm.Designer.vb">
+      <DependentUpon>FGridSuppliersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridSuppliersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseAdjustmentsForm.Designer.vb">
+      <DependentUpon>FGridWarehouseAdjustmentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseAdjustmentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseReturnsForm.Designer.vb">
+      <DependentUpon>FGridWarehouseReturnsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseReturnsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehousesForm.Designer.vb">
+      <DependentUpon>FGridWarehousesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehousesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseTransfersForm.Designer.vb">
+      <DependentUpon>FGridWarehouseTransfersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseTransfersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPurchaseOrderForm.Designer.vb">
+      <DependentUpon>FPurchaseOrderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FPurchaseOrderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportCriteriaForm.Designer.vb">
+      <DependentUpon>FReportCriteriaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FReportCriteriaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportViewerForm.Designer.vb">
+      <DependentUpon>FReportViewerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FReportViewerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSeasonsForm.Designer.vb">
+      <DependentUpon>FSeasonsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSeasonsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSettingsForm.Designer.vb">
+      <DependentUpon>FSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopAdjustmentsForm.Designer.vb">
+      <DependentUpon>FShopAdjustmentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopAdjustmentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopDeliveryForm.Designer.vb">
+      <DependentUpon>FShopDeliveryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopDeliveryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopReturnsForm.Designer.vb">
+      <DependentUpon>FShopReturnsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopReturnsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopSalesForm.Designer.vb">
+      <DependentUpon>FShopSalesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopSalesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopsForm.Designer.vb">
+      <DependentUpon>FShopsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopTransfersForm.Designer.vb">
+      <DependentUpon>FShopTransfersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FShopTransfersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStockForm.Designer.vb">
+      <DependentUpon>FStockForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FStockForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuppliersForm.Designer.vb">
+      <DependentUpon>FSuppliersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSuppliersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseAdjustmentForm.Designer.vb">
+      <DependentUpon>FWarehouseAdjustmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseAdjustmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseReturnsForm.Designer.vb">
+      <DependentUpon>FWarehouseReturnsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseReturnsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehousesForm.Designer.vb">
+      <DependentUpon>FWarehousesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehousesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseTransfersForm.Designer.vb">
+      <DependentUpon>FWarehouseTransfersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseTransfersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FReportViewerForm.resx">
+      <DependentUpon>FReportViewerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
