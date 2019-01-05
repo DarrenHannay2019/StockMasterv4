@@ -80,6 +80,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCheck.vb" />
     <Compile Include="CDelete.vb" />
     <Compile Include="CLoad.vb" />
     <Compile Include="CReports.vb" />
@@ -309,6 +310,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FPurchaseOrderForm.resx">
+      <DependentUpon>FPurchaseOrderForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FReportViewerForm.resx">
       <DependentUpon>FReportViewerForm.vb</DependentUpon>
     </EmbeddedResource>

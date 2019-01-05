@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCheck.cs" />
     <Compile Include="CDelete.cs" />
     <Compile Include="CLoad.cs" />
     <Compile Include="CReports.cs" />
