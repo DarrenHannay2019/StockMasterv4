@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5E0F0D8-A068-4415-A686-6A22A2123CC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StockMaster5</RootNamespace>
+    <AssemblyName>StockMaster5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDelete.cs" />
+    <Compile Include="CLoad.cs" />
+    <Compile Include="CReports.cs" />
+    <Compile Include="CSave.cs" />
+    <Compile Include="CStockMovements.cs" />
+    <Compile Include="CSystemLog.cs" />
+    <Compile Include="CUpdate.cs" />
+    <Compile Include="CUtils.cs" />
+    <Compile Include="FGridAllStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridAllStock.Designer.cs">
+      <DependentUpon>FGridAllStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridCurrentStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridCurrentStock.Designer.cs">
+      <DependentUpon>FGridCurrentStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridMoveTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridMoveTypes.Designer.cs">
+      <DependentUpon>FGridMoveTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridPurchaseOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridPurchaseOrders.Designer.cs">
+      <DependentUpon>FGridPurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridSeasons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridSeasons.Designer.cs">
+      <DependentUpon>FGridSeasons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopAdjustments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopAdjustments.Designer.cs">
+      <DependentUpon>FGridShopAdjustments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopDelivery.Designer.cs">
+      <DependentUpon>FGridShopDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopReturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopReturns.Designer.cs">
+      <DependentUpon>FGridShopReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShops.Designer.cs">
+      <DependentUpon>FGridShops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopSales.Designer.cs">
+      <DependentUpon>FGridShopSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridShopTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridShopTransfers.Designer.cs">
+      <DependentUpon>FGridShopTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridSuppliers.Designer.cs">
+      <DependentUpon>FGridSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseAdjustments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseAdjustments.Designer.cs">
+      <DependentUpon>FGridWarehouseAdjustments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseReturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseReturns.Designer.cs">
+      <DependentUpon>FGridWarehouseReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouses.Designer.cs">
+      <DependentUpon>FGridWarehouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridWarehouseTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridWarehouseTransfers.Designer.cs">
+      <DependentUpon>FGridWarehouseTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMain.Designer.cs">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPurchaseOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPurchaseOrders.Designer.cs">
+      <DependentUpon>FPurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReportCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportCriteria.Designer.cs">
+      <DependentUpon>FReportCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportViewer.Designer.cs">
+      <DependentUpon>FReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSeasons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSeasons.Designer.cs">
+      <DependentUpon>FSeasons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSettings.Designer.cs">
+      <DependentUpon>FSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShopAdjustments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopAdjustments.Designer.cs">
+      <DependentUpon>FShopAdjustments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShopDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopDelivery.Designer.cs">
+      <DependentUpon>FShopDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShopReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopReturn.Designer.cs">
+      <DependentUpon>FShopReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShops.Designer.cs">
+      <DependentUpon>FShops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShopSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopSales.Designer.cs">
+      <DependentUpon>FShopSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FShopTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FShopTransfer.Designer.cs">
+      <DependentUpon>FShopTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStock.Designer.cs">
+      <DependentUpon>FStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSuppliers.Designer.cs">
+      <DependentUpon>FSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseAdjustments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseAdjustments.Designer.cs">
+      <DependentUpon>FWarehouseAdjustments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseReturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseReturns.Designer.cs">
+      <DependentUpon>FWarehouseReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouses.Designer.cs">
+      <DependentUpon>FWarehouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWarehouseTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWarehouseTransfers.Designer.cs">
+      <DependentUpon>FWarehouseTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
