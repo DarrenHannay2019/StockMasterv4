@@ -261,6 +261,60 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FGridAllStock.resx">
+      <DependentUpon>FGridAllStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridCurrentStock.resx">
+      <DependentUpon>FGridCurrentStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridMoveTypes.resx">
+      <DependentUpon>FGridMoveTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridPurchaseOrders.resx">
+      <DependentUpon>FGridPurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridSeasons.resx">
+      <DependentUpon>FGridSeasons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopAdjustments.resx">
+      <DependentUpon>FGridShopAdjustments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopDelivery.resx">
+      <DependentUpon>FGridShopDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopReturns.resx">
+      <DependentUpon>FGridShopReturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShops.resx">
+      <DependentUpon>FGridShops.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopSales.resx">
+      <DependentUpon>FGridShopSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopTransfers.resx">
+      <DependentUpon>FGridShopTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridSuppliers.resx">
+      <DependentUpon>FGridSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseAdjustments.resx">
+      <DependentUpon>FGridWarehouseAdjustments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseReturns.resx">
+      <DependentUpon>FGridWarehouseReturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouses.resx">
+      <DependentUpon>FGridWarehouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseTransfers.resx">
+      <DependentUpon>FGridWarehouseTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMain.resx">
+      <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReportCriteria.resx">
+      <DependentUpon>FReportCriteria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -310,11 +310,65 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FGridAllStockForm.resx">
+      <DependentUpon>FGridAllStockForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridCurrentStockForm.resx">
+      <DependentUpon>FGridCurrentStockForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridMoveTypesForm.resx">
+      <DependentUpon>FGridMoveTypesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridPurchaseOrdersForm.resx">
+      <DependentUpon>FGridPurchaseOrdersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridSeasonsForm.resx">
+      <DependentUpon>FGridSeasonsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopAdjustmentForm.resx">
+      <DependentUpon>FGridShopAdjustmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopDeliveriesForm.resx">
+      <DependentUpon>FGridShopDeliveriesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopReturnsForm.resx">
+      <DependentUpon>FGridShopReturnsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopSalesForm.resx">
+      <DependentUpon>FGridShopSalesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopsForm.resx">
+      <DependentUpon>FGridShopsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridShopTransfersForm.resx">
+      <DependentUpon>FGridShopTransfersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridSuppliersForm.resx">
+      <DependentUpon>FGridSuppliersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseAdjustmentsForm.resx">
+      <DependentUpon>FGridWarehouseAdjustmentsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseReturnsForm.resx">
+      <DependentUpon>FGridWarehouseReturnsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehousesForm.resx">
+      <DependentUpon>FGridWarehousesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridWarehouseTransfersForm.resx">
+      <DependentUpon>FGridWarehouseTransfersForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FPurchaseOrderForm.resx">
       <DependentUpon>FPurchaseOrderForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FReportCriteriaForm.resx">
+      <DependentUpon>FReportCriteriaForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FReportViewerForm.resx">
       <DependentUpon>FReportViewerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
